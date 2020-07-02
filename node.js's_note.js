@@ -37,7 +37,7 @@ var connection = mysql.createConnection(mysql_setting);
 
 connection.connect();
 
-connection.query('insert into mine set ?',data,
+connection.query('insert into tablename set ?',data,
 function(error,results,fields){
 res.redirect('/users');
 });
